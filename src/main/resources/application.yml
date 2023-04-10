@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Fr9UD786E04I
+    url: jdbc:mysql://infra.zeabur.com:30169/audio
+    username: root
+  flyway:
+    locations: classpath:db/migration
+    table: flyway_schema_history
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
